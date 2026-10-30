@@ -1,6 +1,8 @@
 # Privacidade do T1x Stream Hub
 
-Este documento descreve o funcionamento implementado na Beta 0.5.0. Não atribui ao aplicativo certificação ou auditoria de privacidade.
+🇺🇸 [English version](PRIVACY.md)
+
+Este documento descreve o funcionamento implementado na versão Beta atual. Não atribui ao aplicativo certificação ou auditoria de privacidade.
 
 ## Tudo roda no seu PC
 

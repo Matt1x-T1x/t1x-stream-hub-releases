@@ -1,5 +1,7 @@
 # Segurança e distribuição
 
+🇺🇸 [English version](SECURITY.md)
+
 ## Canal oficial
 
 Baixe por https://github.com/mathadoor23/t1x-stream-hub-releases/releases/latest . O GitHub hospeda a distribuição; isso não equivale a aprovação, auditoria ou certificado de editor emitido pelo GitHub.
@@ -21,4 +23,4 @@ Problemas comuns de uso podem ir para as Issues. Não publique detalhes de explo
 
 ## Estado do produto
 
-Beta 0.5.0, com testes automatizados e testes num PC real com OBS 33. Não há declaração de certificação de segurança. Mantenha o aplicativo atualizado.
+Versão Beta, com testes automatizados e testes num PC real com OBS 33. Não há declaração de certificação de segurança. Mantenha o aplicativo atualizado.
