@@ -12,7 +12,9 @@ O instalador é gerado por um runner Windows do GitHub Actions a partir do códi
 
 - O servidor local escuta só em `127.0.0.1` e recusa pedidos com `Host` ou `Origin` de fora (proteção contra DNS rebinding e CSRF). Ações só por POST.
 - Credenciais salvas ficam num cofre AES-256-GCM e nunca voltam para a tela; o **Modo Streamer** começa ligado e esconde o bloco de credenciais.
-- O microfone é liberado só para o painel local do próprio app.
+- O microfone é liberado só para o painel local do próprio app. Os comandos de voz são reconhecidos num processo local isolado (Vosk), que só recebe áudio com o botão pressionado.
+- O login da Twitch usa o fluxo oficial de código de dispositivo: a senha é digitada só no site da Twitch. Tokens ficam no cofre e não voltam para a tela.
+- O chat é exibido como texto puro (nunca como HTML), para que mensagens não executem código no painel.
 - O processo de atalhos globais roda isolado: se ele falhar, o Hub continua no ar.
 
 ## Reportar vulnerabilidade em privado

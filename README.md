@@ -14,7 +14,7 @@
 
 ## 🇧🇷 Português
 
-Painel de controle para lives: OBS, voz com efeito, câmera e chroma key, mixer de convidados e marcador de clipes, tudo numa janela só.
+Painel de controle para lives: OBS, chat unificado Twitch + YouTube com filtro anti-golpe, Soundboard, voz com efeito, comandos de voz, câmera e chroma key, mixer de convidados e marcador de clipes, tudo numa janela só.
 
 ### Como instalar
 
@@ -25,6 +25,10 @@ Painel de controle para lives: OBS, voz com efeito, câmera e chroma key, mixer 
 5. **Confira o som do Windows** em *Configurações → Sistema → Som*: a **Saída** deve ser o seu fone/caixa e a **Entrada** o seu microfone. O "CABLE" não deve ficar como padrão de nada; o Hub envia a voz para ele sozinho. Se algum app insistir no dispositivo errado: *Painel de Controle → Som*, abas **Reprodução** e **Gravação**, botão direito no dispositivo certo → **Definir como dispositivo padrão**.
 6. Abra o Hub, vá em **Conexões & Credenciais → Fontes do OBS** e clique em **Criar o que falta**. Isso cria a fonte da voz no cabo virtual e o fundo virtual atrás da webcam.
 
+**Chat da Twitch:** em *Chat Unificado → ⚙ Conexões do chat*, digite o seu canal e clique em **Ler chat**. Para enviar e moderar, clique em **Entrar com a Twitch** e confirme o código em twitch.tv/activate.
+
+**Chat do YouTube (precisa de uma chave grátis sua):** em <https://console.cloud.google.com/> crie um projeto, ative a **YouTube Data API v3** (*APIs e serviços → Biblioteca*), crie uma **Chave de API** restrita a ela (*Credenciais*), cole no Hub em **YouTube API Key** (Ctrl+Shift+S mostra o campo) e depois cole o link da live em *⚙ Conexões do chat*.
+
 Não precisa de Node, Java nem conta GitHub.
 
 ### O que tem
@@ -32,13 +36,17 @@ Não precisa de Node, Java nem conta GitHub.
 | Módulo | O que faz |
 |---|---|
 | **Controle do OBS** | Cenas, live, gravação e mute do microfone com o estado real do OBS. |
-| **T1x Voicer** | Voz com efeito em tempo real (Grave, Esquilo, Robô, Rádio, Caverna), botão **PANIC** e indicador fixo no topo. Se o app fechar ou travar, o OBS volta sozinho para o microfone direto. |
-| **Camera & Chroma Key Studio** | Filtro de chroma (similaridade, suavização, spill, opacidade), fundos virtuais e prévia. O filtro nasce desligado. |
+| **Chat Unificado** | Twitch + YouTube numa lista só, com emotes e filtro por plataforma. Com **Entrar com a Twitch** você envia mensagens, apaga e dá timeout. |
+| **AI Chat Shield** | Filtro 100% local: oculta golpes de "viewers/seguidores" e palavras bloqueadas (mesmo disfarçadas), destaca links desconhecidos, CAPS e flood. Risada (kkkk) nunca é punida. |
+| **Soundboard** | 16 sons originais, 16 botões com atalho global, volume separado da live e do fone, e seus próprios sons por arrastar e soltar. |
+| **T1x Voicer** | 12 vozes em tempo real (Grave, Esquilo, Robô, Rádio, Caverna, Monstro, Alien, Telefone, Megafone, Estádio, Fantasma), botão **PANIC** e indicador fixo no topo. Se o app fechar ou travar, o OBS volta sozinho para o microfone direto. |
+| **Voice Macros** | Segure um botão e fale ("cena …", "voz robô", "som palmas", "marcar clipe"). Reconhecimento offline (Vosk), sem Google; o mic é mutado na live durante o comando. |
+| **Camera & Chroma Key Studio** | Filtro de chroma (similaridade, suavização, spill, opacidade), fundos virtuais e prévia em tempo real (até 30 FPS). O filtro nasce desligado. |
 | **Mixer de Convidados** | Volume, corte e medidor de cada fonte de áudio do OBS; fixe convidados no topo. |
 | **Instant Clip Marker** | Um clique ou atalho grava o momento em planilha, cria capítulo na gravação e salva o Replay Buffer. |
 | **Modo Streamer** | Esconde senhas e chaves da tela. Começa ligado. |
 
-**Atalhos globais** (funcionam com o jogo em foco, remapeáveis): `Ctrl+Shift+F1…F6` vozes · `F9` clipe · `F10` mic · `F12` PANIC.
+**Atalhos globais** (funcionam com o jogo em foco, remapeáveis, aceitam botões do mouse): `Ctrl+Shift+F1…F8, F11` vozes · `F9` clipe · `F10` mic · `F12` PANIC · `Ctrl+Shift+1…8` e `Alt+Shift+1…8` sons · `Ctrl+Shift+0` parar sons · botão lateral do mouse (segurar) comando de voz.
 
 ### Atualizações
 
@@ -67,7 +75,7 @@ Versão Beta, testada com o OBS 33 num PC real e com testes automatizados. Este 
 
 ## 🇺🇸 English
 
-Control panel for live streams: OBS, voice effects, camera and chroma key, guest mixer and clip marker, all in one window. The app interface is in Portuguese.
+Control panel for live streams: OBS, unified Twitch + YouTube chat with an anti-scam filter, Soundboard, voice effects, voice commands, camera and chroma key, guest mixer and clip marker, all in one window. The app interface is in Portuguese.
 
 ### How to install
 
@@ -78,6 +86,10 @@ Control panel for live streams: OBS, voice effects, camera and chroma key, guest
 5. **Check Windows sound** in *Settings → System → Sound*: **Output** must be your headset/speakers and **Input** your microphone. "CABLE" must not be the default for anything; the Hub sends the voice to it by itself. If an app keeps using the wrong device: *Control Panel → Sound*, **Playback** and **Recording** tabs, right-click the correct device → **Set as Default Device**.
 6. Open the Hub, go to **Conexões & Credenciais → Fontes do OBS** and click **Criar o que falta** ("create what is missing"). This creates the voice source on the virtual cable and the virtual background behind the webcam.
 
+**Twitch chat:** in *Chat Unificado → ⚙ Conexões do chat*, type your channel and click **Ler chat** (read chat). To send and moderate, click **Entrar com a Twitch** (sign in with Twitch) and confirm the code at twitch.tv/activate.
+
+**YouTube chat (needs your own free key):** at <https://console.cloud.google.com/> create a project, enable **YouTube Data API v3** (*APIs & Services → Library*), create an **API key** restricted to it (*Credentials*), paste it into **YouTube API Key** in the Hub (Ctrl+Shift+S shows the field), then paste your live link in *⚙ Conexões do chat*.
+
 No Node, Java or GitHub account needed.
 
 ### Features
@@ -85,13 +97,17 @@ No Node, Java or GitHub account needed.
 | Module | What it does |
 |---|---|
 | **OBS control** | Scenes, stream, recording and mic mute, with the real OBS state. |
-| **T1x Voicer** | Real-time voice effects (Deep, Chipmunk, Robot, Radio, Cave), **PANIC** button and a fixed indicator at the top. If the app closes or freezes, OBS switches back to the direct mic by itself. |
-| **Camera & Chroma Key Studio** | Chroma filter (similarity, smoothness, spill, opacity), virtual backgrounds and preview. The filter starts disabled. |
+| **Unified Chat** | Twitch + YouTube in one list, with emotes and a per-platform filter. **Sign in with Twitch** to send messages, delete and time out. |
+| **AI Chat Shield** | 100% local filter: hides "viewers/followers" scams and blocked words (even disguised), flags unknown links, CAPS and flooding. Laughter (kkkk) is never punished. |
+| **Soundboard** | 16 original sounds, 16 buttons with global hotkeys, separate stream and headset volume, and your own sounds via drag and drop. |
+| **T1x Voicer** | 12 real-time voices (Deep, Chipmunk, Robot, Radio, Cave, Monster, Alien, Phone, Megaphone, Stadium, Ghost), **PANIC** button and a fixed indicator at the top. If the app closes or freezes, OBS switches back to the direct mic by itself. |
+| **Voice Macros** | Hold a button and speak, in Portuguese ("cena …", "voz robô", "som palmas", "marcar clipe"). Offline recognition (Vosk), no Google; your mic is muted on stream during the command. |
+| **Camera & Chroma Key Studio** | Chroma filter (similarity, smoothness, spill, opacity), virtual backgrounds and real-time preview (up to 30 FPS). The filter starts disabled. |
 | **Guest Mixer** | Volume, mute and meter for each OBS audio source; pin guests to the top. |
 | **Instant Clip Marker** | One click or hotkey logs the moment to a spreadsheet, adds a recording chapter and saves the Replay Buffer. |
 | **Streamer Mode** | Hides passwords and keys from the screen. On by default. |
 
-**Global hotkeys** (work while the game is focused, remappable): `Ctrl+Shift+F1…F6` voices · `F9` clip · `F10` mic · `F12` PANIC.
+**Global hotkeys** (work while the game is focused, remappable, accept mouse buttons): `Ctrl+Shift+F1…F8, F11` voices · `F9` clip · `F10` mic · `F12` PANIC · `Ctrl+Shift+1…8` and `Alt+Shift+1…8` sounds · `Ctrl+Shift+0` stop sounds · side mouse button (hold) voice command.
 
 ### Updates
 

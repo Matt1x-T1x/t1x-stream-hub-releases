@@ -12,7 +12,9 @@ The installer is built by a GitHub Actions Windows runner from the private sourc
 
 - The local server listens on `127.0.0.1` only and rejects requests with an outside `Host` or `Origin` (protection against DNS rebinding and CSRF). Actions are POST only.
 - Saved credentials live in an AES-256-GCM vault and are never shown again; **Streamer Mode** starts on and hides the credentials block.
-- The microphone is only allowed for the app's own local panel.
+- The microphone is only allowed for the app's own local panel. Voice commands are recognized in an isolated local process (Vosk), which only receives audio while the button is held.
+- Twitch sign-in uses the official device-code flow: the password is only typed on Twitch's website. Tokens stay in the vault and are never shown.
+- Chat is rendered as plain text (never as HTML), so messages cannot run code in the panel.
 - The global hotkey process runs isolated: if it fails, the Hub stays up.
 
 ## Report a vulnerability privately
