@@ -2,7 +2,7 @@
 
 <h1 align="center">T1x Stream Hub</h1>
 
-<p align="center"><b>Windows x64 · Beta · distribuição oficial / official distribution</b></p>
+<p align="center"><b>Windows x64 · Beta · distribuição oficial / official distribution</b><br>Visual da família T1x · T1x family design</p>
 
 <p align="center"><a href="#-português">🇧🇷 Português</a> · <a href="#-english">🇺🇸 English</a></p>
 
@@ -44,6 +44,8 @@ Não precisa de Node, Java nem conta GitHub.
 | **Camera & Chroma Key Studio** | Filtro de chroma (similaridade, suavização, spill, opacidade), fundos virtuais e prévia em tempo real (até 30 FPS). O filtro nasce desligado. |
 | **Mixer de Convidados** | Volume, corte e medidor de cada fonte de áudio do OBS; fixe convidados no topo. |
 | **Instant Clip Marker** | Um clique ou atalho grava o momento em planilha, cria capítulo na gravação e salva o Replay Buffer. |
+| **Estatísticas & Saúde** | Viewers da Twitch e do YouTube, tempo de live, mensagens e pessoas no chat, bitrate real e quadros perdidos da live e da gravação. |
+| **Desempenho & Diagnóstico** | Mede a CPU e a RAM de cada processo do Hub e do OBS e mostra quanto o preview pesa no OBS da sua máquina. |
 | **Modo Streamer** | Esconde senhas e chaves da tela. Começa ligado. |
 
 **Atalhos globais** (funcionam com o jogo em foco, remapeáveis, aceitam botões do mouse): `Ctrl+Shift+F1…F8, F11` vozes · `F9` clipe · `F10` mic · `F12` PANIC · `Ctrl+Shift+1…8` e `Alt+Shift+1…8` sons · `Ctrl+Shift+0` parar sons · botão lateral do mouse (segurar) comando de voz.
@@ -105,6 +107,8 @@ No Node, Java or GitHub account needed.
 | **Camera & Chroma Key Studio** | Chroma filter (similarity, smoothness, spill, opacity), virtual backgrounds and real-time preview (up to 30 FPS). The filter starts disabled. |
 | **Guest Mixer** | Volume, mute and meter for each OBS audio source; pin guests to the top. |
 | **Instant Clip Marker** | One click or hotkey logs the moment to a spreadsheet, adds a recording chapter and saves the Replay Buffer. |
+| **Stats & Health** | Twitch and YouTube viewers, stream time, chat messages and people, real stream and recording bitrate and dropped frames. |
+| **Performance & Diagnostics** | Measures the CPU and RAM of each Hub process and OBS, and shows how much the preview costs OBS on your machine. |
 | **Streamer Mode** | Hides passwords and keys from the screen. On by default. |
 
 **Global hotkeys** (work while the game is focused, remappable, accept mouse buttons): `Ctrl+Shift+F1…F8, F11` voices · `F9` clip · `F10` mic · `F12` PANIC · `Ctrl+Shift+1…8` and `Alt+Shift+1…8` sounds · `Ctrl+Shift+0` stop sounds · side mouse button (hold) voice command.
