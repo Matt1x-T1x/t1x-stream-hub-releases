@@ -4,7 +4,7 @@
 
 ## Canal oficial
 
-Baixe por https://github.com/mathadoor23/t1x-stream-hub-releases/releases/latest . O GitHub hospeda a distribuição; isso não equivale a aprovação, auditoria ou certificado de editor emitido pelo GitHub.
+Baixe por https://github.com/Matt1x-T1x/t1x-stream-hub-releases/releases/latest . O GitHub hospeda a distribuição; isso não equivale a aprovação, auditoria ou certificado de editor emitido pelo GitHub.
 
 O instalador é gerado por um runner Windows do GitHub Actions a partir do código-fonte privado. A atualização automática confere o hash SHA-512 do instalador informado no `latest.yml` antes de instalar. Ainda não há assinatura criptográfica própria dos metadados nem certificado Authenticode de editor; não desative antivírus ou SmartScreen para contornar um bloqueio. Uma alteração indevida no arquivo é motivo para interromper a instalação e reportar.
 
@@ -19,7 +19,7 @@ O instalador é gerado por um runner Windows do GitHub Actions a partir do códi
 
 ## Reportar vulnerabilidade em privado
 
-Use [Report a vulnerability](https://github.com/mathadoor23/t1x-stream-hub-releases/security/advisories/new). Esse canal é privado para o responsável pelo repositório. Informe versão, passos mínimos para reproduzir e impacto observado, sem credenciais ou dados de terceiros.
+Use [Report a vulnerability](https://github.com/Matt1x-T1x/t1x-stream-hub-releases/security/advisories/new). Esse canal é privado para o responsável pelo repositório. Informe versão, passos mínimos para reproduzir e impacto observado, sem credenciais ou dados de terceiros.
 
 Problemas comuns de uso podem ir para as Issues. Não publique detalhes de exploração ou dados sensíveis nelas. Não há programa de recompensa ou prazo de resposta anunciado.
 
